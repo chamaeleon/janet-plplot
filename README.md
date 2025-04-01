@@ -9,6 +9,8 @@ Using the [`jpm`](https://github.com/janet-lang/jpm) package management tool
 jpm install https://github.com/chamaeleon/janet-plplot.git
 ```
 
+The PLplot library requires installation as well along with drivers for GUI display of graphs, separately from installing this wrapper library. On Ubuntu 24.04, for example, `libplplot17`, plus probably one or more of `plplot-driver-cairo`, `plplot-driver-qt`, `plplot-driver-wxwidgets`, and `plplot-driver-xwin` is recommended.
+
 # Example usage
 
 Given the following code in a Janet source file results in the image below (it was generated using the `xcairo` driver)
